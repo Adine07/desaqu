@@ -1,0 +1,390 @@
+/* MyStyle */
+
+/*All*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Navbar*/
+.navbar-brand, .nav-link{
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+}
+.nav-link{
+    text-transform: uppercase;
+}
+.scrolled{
+    background-color: #212121;
+}
+.nav-line:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+.nav-line2:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    margin-top: -2px;
+    padding-bottom: -6px;
+    margin-bottom: -5px;
+}
+
+.active .nav-line::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.active .nav-line2::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    margin-top: -2px;
+    padding-bottom: -6px;
+    margin-bottom: -5px;
+}
+
+/* carosel style */
+
+.carousel1 .carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.carousel1 .carousel-item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.carousel1 .carousel-item .display-4 {
+    margin-top: -60vh;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel1 .btn {
+    margin-top: 18vh;
+    border-radius: 25px;
+    padding: 8px 30px;
+}
+
+.carousel1 .ket {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+/*InfoPanel*/
+.info{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.6);
+}
+
+.panel{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.panel:hover{
+    background-color: #212121;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+.info-panel .icon{
+    font-size: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p{
+    font-size: 14px;
+    color: #acacac;
+    margin-top: -5px;
+    font-weight: 200;
+}
+
+/*caption*/
+.caption{
+    font-family: 'Josefin Slab', serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#textdekor{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*Mukadimah lurah*/
+
+.mukadimah img{
+    width: 80%;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -10px;
+    z-index: -1;
+}
+
+.mukadimah .fa-quote-left{
+    font-size: 64px;
+}
+
+.text-muka{
+    font-size: 22px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.name-kd{
+    font-size: 34px;
+    font-weight: 700;
+    font-family: 'Josefin Slab', serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.name-ket{
+    margin-top: -5px;
+    margin-bottom: 120px;
+}
+
+/*Info*/
+.info-des{
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/26/16/49/popeye-village-4158038_960_720.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-color: red;
+    position: relative;
+    margin: 0px;
+    padding: 80px 0px;
+}
+
+.info-des::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
+    position: absolute;
+    bottom: 0;
+}
+
+.info-des .upper{
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.info-des .display-4{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.info-des .upper .fa{
+    font-size: 3em;
+    padding: 22px 0px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.info-des .nomer{
+    font-size: 32px;
+}
+
+.info-des .upper p{
+    font-weight: bold;
+}
+
+/*data*/
+/*
+#data .btn{
+    border-radius: 0px;
+}
+
+#data .collapse{
+    background-color: #eaeaea;
+    border: 1px solid #c2c2c2;
+    position: relative;
+}
+
+#data .accordion .btn{
+    background-color: #ff6e6e;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+#data .accordion .col-8 .collapse{
+    height: 100%;
+}*/
+
+/*STOK*/
+
+.stok h3{
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.stok .col-md-3 .card{
+    box-sizing: content-box;
+    background-color: #eaeaea;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+    border-radius: 0px;
+}
+
+
+.stok .card p{
+    line-height: 1;
+    font-weight: 500;
+    margin: 0px 0px 10px 0px;
+}
+
+.stok .card .text-muted{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/*Berita*/
+
+.berita{
+    background-image: linear-gradient(to bottom, #666, #212121);
+    color: white;
+}
+
+.berita .display-4{
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.slide{
+    /*padding:0;*/
+}
+.berita-item{
+    float: left;
+    opacity: 1;
+    overflow: hidden;
+    position: relative;
+}
+.berita-item:hover .berita-item img{
+    /*height: 50vh;*/
+}
+.berita-item img{
+    height: 50vh;
+}
+.berita-item a,span{
+    color:#FFF;
+}
+.berita-item .berita-post span.berita-icon {
+    font-family:  sans-serif;
+    font-size:14px;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+}
+.berita-item .berita-post span.berita-icon span{
+    margin-right: 15px;
+}
+.berita-item .berita-post span.berita-social-icon{
+    float:right;
+}
+.berita-item .berita-post span.berita-social-icon span i{
+    background-color:transparent;
+    color:#fff;
+    border:1px solid #fff;
+    padding:8px;
+    border-radius: 50%;
+    height:35px;
+    width:35px;
+    text-align: center;
+    margin:2px 4px 0px 2px;
+}
+.berita-item .berita-post span.berita-social-icon span i:hover{
+    background-color:#e1e1e1;
+    color:#000;
+}
+.berita-item .berita-post {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.berita-item .berita-post h1.berita-judul {
+   font-size:24px;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #212121;
+}
+.footer h4{
+    font-weight: 600;
+    font-size: 32px;
+}
+.footer .desk{
+    color: whitesmoke;
+}
+.footer span{
+    margin-right: 15px;
+}
+
+.footer span i{
+    background-color:transparent;
+    color:#fff;
+    border:1px solid #fff;
+    padding:8px;
+    border-radius: 50%;
+    height:60px;
+    width:60px;
+    font-size: 42px;
+    text-align: center;
+    margin:2px 4px 0px 2px;
+}
+
+.footer span i:hover{
+    background-color:#e1e1e1;
+    color:#000;
+}
+
+.end{
+    background-color: #111;
+}
+
